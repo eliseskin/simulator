@@ -14,7 +14,7 @@ const Home = () => {
         <hr className="my-4" />
         <p className="lead">Un mejor modelado de factibilidad.</p>
         <Link to="/start" className="btn btn-primary btn-lg mx-1">
-          Nuevo Emprededor
+          Nuevo Emprendedor
         </Link>
         <Link to="/" className="btn btn-secondary btn-lg mx-1">
           Cargar Emprendedor

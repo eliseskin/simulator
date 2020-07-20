@@ -5,6 +5,9 @@ import Deal from "../components/Deal";
 import TypeDeal from "../components/TypeDeal";
 import Panel from "../components/panel/index";
 import Activo from "../components/panel/activo/Activo";
+import Inversiones from "../components/panel/inversiones/Inversiones";
+import Coste from "../components/panel/costofijo/coste";
+import Salarios from "../components/panel/costofijo/salarios";
 
 const RoutesHome = () => (
   <Router>
@@ -23,6 +26,15 @@ const RoutesHome = () => (
       </Route>
       <Route exact path="/panel/activo">
         <Activo />
+      </Route>
+      <Route exact path="/panel/inversiones">
+        <Inversiones />
+      </Route>
+      <Route exact path="/panel/coste">
+        <Coste />
+      </Route>
+      <Route exact path="/panel/salarios">
+        <Salarios />
       </Route>
     </Switch>
   </Router>

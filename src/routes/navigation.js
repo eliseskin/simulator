@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({ name }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
         <Link to="/panel" className="navbar-brand">
-          Simulador
+          Negocio - {name}
         </Link>
         <button
           className="navbar-toggler"
@@ -22,8 +22,8 @@ const Navigation = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link to="" className="nav-link">
-                Activos
+              <Link to="/panel" className="nav-link">
+                Panel
               </Link>
             </li>
             <li className="nav-item dropdown">
@@ -42,8 +42,41 @@ const Navigation = () => {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <Link to="" className="dropdown-item">
-                  Actions
+                <Link to="/panel/activo" className="dropdown-item">
+                  Cuadro Actions
+                </Link>
+                <Link to="/panel/inversiones" className="dropdown-item">
+                  Cuadro Inversiones
+                </Link>
+                <Link to="/panel/coste" className="dropdown-item">
+                  Precio Costo
+                </Link>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <Link
+                to="#"
+                className="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tipos Costo
+              </Link>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <Link to="/panel/salarios" className="dropdown-item">
+                  Cuadro Actions
+                </Link>
+                <Link to="/panel/generales" className="dropdown-item">
+                  Cuadro Inversiones
+                </Link>
+                <Link to="/panel/coste" className="dropdown-item">
+                  Precio Venta y P.E.
                 </Link>
               </div>
             </li>
