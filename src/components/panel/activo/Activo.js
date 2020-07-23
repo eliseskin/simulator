@@ -3,6 +3,9 @@ import Container from "../../deal/Row";
 import Navigation from "../../../routes/navigation";
 import Table from "./table";
 import { useRef } from "react";
+import Alert from "../alet";
+import Collapse from "../collapse";
+import FooterCard from "../FooterCard";
 
 const Activo = () => {
   const [activo, setActivo] = useState({
@@ -33,37 +36,15 @@ const Activo = () => {
       <Navigation />
       <Container>
         <div className="col-md-12">
-          <div
-            className="mt-2 alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
+          <Alert>
             Agregar datos de los equipos y mobiliario que contendra el negocio
             inicial estos deben constar con los minimos mas edificio o lugar.
-            <button
-              type="button"
-              className="close"
-              data-dismiss="alert"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+          </Alert>
           <div className="card card-body my-2">
             <h5 className="card-title text-center">
               Activos Para la Instalacion Inicial
             </h5>
-            <p>
-              <button
-                className="btn btn-secondary"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseExample"
-                aria-expanded="false"
-                aria-controls="collapseExample"
-              >
-                Agregar Nuevo Activo
-              </button>
-            </p>
+            <Collapse>Agregar Nuevo Activo</Collapse>
             <div className="collapse" id="collapseExample">
               <form className="mb-2" onSubmit={handleSubmit}>
                 <div className="form-row">
@@ -191,10 +172,9 @@ const Activo = () => {
                 </div>
               </div>
             </Container>
-            <div class="card-footer text-muted text-center">
+            <FooterCard strong="Cuadro Inversiones">
               Agregar los datos necesarios proseguir al
-              <strong> Cuadro Inversiones</strong>
-            </div>
+            </FooterCard>
           </div>
         </div>
       </Container>

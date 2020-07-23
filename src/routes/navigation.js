@@ -43,13 +43,13 @@ const Navigation = ({ name }) => {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <Link to="/panel/activo" className="dropdown-item">
-                  Cuadro Actions
+                  Cuadro Activos
                 </Link>
                 <Link to="/panel/inversiones" className="dropdown-item">
                   Cuadro Inversiones
                 </Link>
                 <Link to="/panel/coste" className="dropdown-item">
-                  Precio Costo
+                  Produccion Ventas
                 </Link>
               </div>
             </li>
@@ -63,20 +63,47 @@ const Navigation = ({ name }) => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Tipos Costo
+                Costos
               </Link>
               <div
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <Link to="/panel/salarios" className="dropdown-item">
-                  Cuadro Actions
+                  Sueldos Y Salarios
                 </Link>
                 <Link to="/panel/generales" className="dropdown-item">
-                  Cuadro Inversiones
+                  Gastos Generales
+                </Link>
+                <Link to="/panel/resumen" className="dropdown-item">
+                  Resumen Costos Fijos
+                </Link>
+              </div>
+            </li>
+            <li className="nav-item dropdown">
+              <Link
+                to="#"
+                className="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Ingresos
+              </Link>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <Link to="/panel/salarios" className="dropdown-item">
+                  Venta Proyectada
+                </Link>
+                <Link to="/panel/generales" className="dropdown-item">
+                  Resultados
                 </Link>
                 <Link to="/panel/coste" className="dropdown-item">
-                  Precio Venta y P.E.
+                  Resumen Costos Fijos
                 </Link>
               </div>
             </li>

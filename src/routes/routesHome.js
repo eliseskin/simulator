@@ -6,7 +6,7 @@ import TypeDeal from "../components/TypeDeal";
 import Panel from "../components/panel/index";
 import Activo from "../components/panel/activo/Activo";
 import Inversiones from "../components/panel/inversiones/Inversiones";
-import Coste from "../components/panel/costofijo/coste";
+import Resumen from "../components/panel/resumcosto/index";
 import Salarios from "../components/panel/costofijo/salarios";
 
 const RoutesHome = () => (
@@ -31,7 +31,7 @@ const RoutesHome = () => (
         <Inversiones />
       </Route>
       <Route exact path="/panel/coste">
-        <Coste />
+        <Resumen />
       </Route>
       <Route exact path="/panel/salarios">
         <Salarios />

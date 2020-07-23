@@ -35,10 +35,10 @@ const PanelCards = () => {
               pasos de los gastos genenerales entre equipos rentas
             </div>
             <hr className="my-4" />
-            <Link className="card-link" to="/panel/inversiones">
+            <Link className="card-link" to="/panel/salarios">
               Agregar costos
             </Link>
-            <Link className="card-link" to="/panel/activo">
+            <Link className="card-link" to="/panel/resumen">
               Resumen General
             </Link>
           </div>
